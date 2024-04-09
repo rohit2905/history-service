@@ -15,7 +15,7 @@ public class PrimesRecord {
 	
 	private String customer;
 	
-	private int n;
+	private String n;
 	
 	private boolean isPrime;
 
@@ -23,8 +23,16 @@ public class PrimesRecord {
 		return id;
 	}
 
-	public void setId(int id) {
+	public PrimesRecord() {
+		
+	}
+
+	public PrimesRecord(int id, String customer, String n, boolean isPrime) {
+		super();
 		this.id = id;
+		this.customer = customer;
+		this.n = n;
+		this.isPrime = isPrime;
 	}
 
 	public String getCustomer() {
@@ -35,11 +43,11 @@ public class PrimesRecord {
 		this.customer = customer;
 	}
 
-	public int getN() {
+	public String getN() {
 		return n;
 	}
 
-	public void setN(int n) {
+	public void setN(String n) {
 		this.n = n;
 	}
 
@@ -50,4 +58,9 @@ public class PrimesRecord {
 	public void setPrime(boolean isPrime) {
 		this.isPrime = isPrime;
 	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 }

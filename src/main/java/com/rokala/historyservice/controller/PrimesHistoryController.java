@@ -19,7 +19,6 @@ public class PrimesHistoryController {
 	private final PrimesHistoryRepository primesHistoryRepository;
 
 	public PrimesHistoryController(PrimesHistoryRepository primesHistoryRepository) {
-		super();
 		this.primesHistoryRepository = primesHistoryRepository;
 	}
 	
